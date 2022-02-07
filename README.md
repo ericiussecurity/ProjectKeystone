@@ -25,3 +25,5 @@ How to use this document:
 - If you haven’t created those other documents, we recommend creating them or removing the references to them.
 - Remember that these are governing policies, not technical runbooks.
 - Make sure you have HR, Legal, and anyone else important review this before you make it policy!
+
+This project was originally published by Stratacore under the MIT license at https://www.stratacore.com/projectpolicy
