@@ -1,13 +1,20 @@
 \documentclass[12pt, letterpaper, oneside, BCOR=5mm]{scrartcl}
 \usepackage{subfiles}
-\usepackage{catchfile}
-\usepackage{pgf}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 
 \newcommand{\CompanyName}{TEMP COMPANY}
 \newcommand{\MissionStatement}{TEMP MISSION STATEMENT}
 \newcommand{\DocumentationandPolicies}{LINK\_TO\_DOCS\_AND\_POLICY}
 \newcommand{\RACIDocs}{LINK\_TO\_RACI\_DOCS}
 \newcommand{\ExceptionsRegistry}{LINK\_TO\_EXCEPTIONS\_REGISTRY}
+\newcommand{\InfoInventory}{LINK\_TO\_INFO\_INVENTORY}
 
 \title{Cybersecurity and IT Policy}
 \author{Ericius Security}
@@ -15,6 +22,12 @@
 
 \begin{document}
     \maketitle
+    \pagebreak
+    \tableofcontents
+    \pagebreak
     \section{Policy Statement}
     \subfile{sections/policyStatement}
+    \pagebreak
+    \section{Appendix A}
+    \subfile{sections/appendixA}
 \end{document}
