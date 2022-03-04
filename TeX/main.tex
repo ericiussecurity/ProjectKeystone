@@ -1,6 +1,7 @@
 \documentclass[10pt, letterpaper, oneside, BCOR=5mm]{scrartcl}
 \usepackage{subfiles}
 \usepackage{hyperref}
+\usepackage{geometry}
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -9,7 +10,7 @@
     urlcolor=black
 }
 
-\newcommand{\CompanyName}{TEMP COMPANY}
+\newcommand{\CompanyName}{COMPANY}
 \newcommand{\MissionStatement}{TEMP MISSION STATEMENT}
 \newcommand{\DocumentationandPolicies}{LINK\_TO\_DOCS\_AND\_POLICY}
 \newcommand{\RACIDocs}{LINK\_TO\_RACI\_DOCS}
@@ -18,6 +19,11 @@
 \newcommand{\PasswordManager}{DEFAULT\_MANAGER}
 \newcommand{\AssetInventory}{LINK\_TO\_ASSET\_INVENTORY}
 \newcommand{\NetworkDiagram}{LINk\_TO\_NETWORK\_DIAGRAM}
+\newcommand{\PacePlan}{LINK\_TO\_PACE\_PLAN}
+\newcommand{\IRTStakeholders}{LINK\_TO\_IRT\_STAKEHOLDERS}
+\newcommand{\ReportingNumber}{(XXX) XXX-XXXX)}
+\newcommand{\ReportingEmail}{reporting\@company.com}
+\newcommand{\TicketPortal}{LINK\_TO\_TICKETING\_SERVICE}
 
 
 \title{Cybersecurity and IT Policy}
@@ -32,6 +38,8 @@
     \subfile{sections/policyStatement}
     \pagebreak
     \subfile{sections/appendixA}
+    \pagebreak
+    \subfile{sections/appendixB}
     \pagebreak
     \subfile{sections/appendixC}
     \pagebreak
