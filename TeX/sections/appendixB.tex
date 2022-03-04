@@ -1,0 +1,413 @@
+\documentclass[../main.tex]{subfiles}
+\usepackage{enumitem}
+\usepackage{geometry}
+
+\begin{document}
+\section{Appendix B: Incident Management Policy and Process}
+\subsection{Overview and Purpose}
+The Purpose of this policy is to ensure that information security increases our ability to win in the market and against our competition by effectively identifying, responding to,
+and managing information security incidents.
+\subsection{Scope}
+This policy applies to entities outlined in the Cybersecurity and IT Policy base document.
+\subsection{Enforcement}
+See enforcement clause in the Cybersecurity and IT Policy.
+\subsection{Roles and Responsibilities}
+\begin{enumerate}
+    \item CISO or other person designated in writing:
+    \begin{enumerate}
+        \item Responsible for the proper implementation of the Incident Management Policy and Process
+        \item Leads all aspects of response to an incident and is the primary source of truth and communication within the organization and coaches external communicators before breach
+        disclosure to third parties. The CISO also leads incident response exercises and communicates the plan to senior leaders within the organization.
+    \end{enumerate}
+    \item Office Manager - Keeps non-essential personnel from interfering with breach response.
+    \item IT Manager - Keep CISO informed of incidents.
+\end{enumerate}
+
+\subsection{Acronyms}
+\begin{enumerate}
+    \item IRT - Incident Response Team
+    \item PACE Plan - A plan to cover the Primary, Alternate, Contingency, and Emergency modes of accomplishing a particular task or action.
+    The purpose of the PACE Plan is to provide the means to contact the people needed during an emergency to take the appropriate immediate action to respond to an emergency.
+    \item MTTR - Mean time to Resolution
+    \item IRT - Incident Response Team
+    \item CAL OES - California Governor's Office of Emergency Services. They have a good template, and we borrowed from it as the starting point for this document.
+    They get credit for inspiration!
+    \item SUNY Broome - Another public-domain resource that we need to credit!
+\end{enumerate}
+\subsection{Policy}
+\begin{enumerate}
+    \item Incident Response Team
+    \item \begin{enumerate}
+        \item The following departments or sections will provide a point of contact who is available on a 24/7 basis to assist with any security incident that occurs:
+        \begin{enumerate}
+            \item Facilities Manager or Physical Security Office
+            \begin{enumerate}
+                \item Finance
+                \item Legal Counsel
+                \item Operations
+                \item Technology
+                \item Information Technology
+                \item CISO
+                \item Public Affairs, Marketing, or Communications
+                \item Internal Audit
+                \item Governance and Compliance
+                \item Other departments as required
+            \end{enumerate}
+        \end{enumerate}
+        \item If the appointed contact is not available, the department or section lead becomes the assisting party until another member of their department or section is replaced.
+        \item A list of contact information is available here: \IRTStakeholders
+    \end{enumerate}
+    \item Incident Response Team Notification
+    \item In collaboration with other departments, the information security team will establish a PACE plan for notifying all members, participants, or stakeholders of an incident response team
+    in case of a security incident. Stakeholders may include third parties such as an outsourced SOC, IR team, MSSP, etc.
+    \item All potential members, participants, or stakeholders of an IRT will be familiar with the notification PACE plan and have appropriate personnel prepared to utilize any applicable
+    services indicated.
+    \item Each department contributing a member to the IRT will establish an alias, distribution list, or equivalent that complies with the PACE Plan and notifies the appropriate individual
+    assigned to IRT duty in case of an IRT notification.
+    \item The IRT Notification PACE Plan can be found here: \PacePlan{}
+    \item Incident Response Team Communications
+    \begin{enumerate}
+        \item According to a PACE Plan, the incident response team will establish an operations center and connect with communications tools.
+        \item A physical operations center will include ample seating, tools for collaboration and presentation, and at least one computer workstation with access to a high-speed internet
+        connection to connect remote participants virtually.
+        \item A virtual operations center will enable remote participants to communicate, present information and multi-media, and form semi-private collaboration spaces such as breakout rooms.
+        \item The IRT PACE Plan can be found here: \PacePlan{}.
+    \end{enumerate}
+    \item 	External Points of Contact - The information security department will maintain the following points of contact and make them available to the IRT:
+    \begin{enumerate}
+        \item MSP
+        \item MSSP
+        \item Internet Service Provider
+        \item Local FBI
+        \item Local Law Enforcement's Computer Crime Department
+        \item Local CIRT or FIRST
+        \item Web Host
+        \item Other Third-Party providers
+    \end{enumerate}
+    \item Events and Incidents
+    \begin{enumerate}
+        \item \CompanyName{}  will use the following definitions of events and incidents following the definitions in NIST 800-61 rev 2:
+        \item Event - Any observable occurrence in a system or network, such as a user requesting a web page or a firewall blocking a connection attempt.
+        \item Adverse event - an event with a negative consequence like a system crash or unauthorized use of system privileges
+        \item Incident - a violation or imminent threat of violation of computer security policies, acceptable use policies, or standard security practices.
+        This may include such actions as the threat of or actual use of a Denial of Service (DoS) attack or Distributed DoS (DDoS), or a user hosting illegal content on company resources.
+    \end{enumerate}
+    \item Triage and Escalation
+    \item Not every event turns into an incident. When an event is reported, the first person in the reporting chain with authority to determine if an event meets the threshold of an
+    incident must triage the event (or attempt to correlate seemingly unconnected events) and make a judgment or seek additional information. That person must then document their decision
+    in the appropriate register for tracking.
+    \item Tracking and reports
+    \begin{enumerate}
+        \item When an incident occurs, \CompanyName{}  will assign the incident a category and track the incident in accordance with the process section of this
+        appendix. When tracking or reporting, maintain the following information based on NIST 800-61 rev two and US-CERT Guidelines:
+        \begin{enumerate}
+            \item The incident category and tracking number
+            \item The assessed functional impact
+            \item The assessed information impacts
+            \item The date and time that the activity was detected and the date and time the activity occurred
+            \item The number of systems, records, or users impacted.
+            \item The network and physical location or identification of systems, records, or users impacted.
+            \item The points of contact for additional follow-up
+            \item The attack vector or root cause (as known/available)
+            \item The associated indicators of compromise, including signatures or detection measures developed in relationship to the incident
+            \item The actions taken to mitigate the incident and recommended actions the client undertake
+            \item Tracking is essential for reasons such as conducting post-mortem analyses, contributing to a lessons learned repository, identifying attack
+            patterns that can expose insights about the team and the adversary.
+        \end{enumerate}
+    \end{enumerate}
+    \item Incident Categories - When categorizing incidents, use the following table:
+\end{enumerate}
+\hspace*{-2cm}
+\begin{tabular}{|p{2cm} p{4cm} p{9cm} p{3cm}|}
+    \hline
+    \textbf{Category} & \textbf{Name} & \textbf{Description} & \textbf{MTTR Goal} \\
+    \hline
+    CAT A & Simulations & Used to annotate incidents created to test systems and simulate attackers & Not applicable \\
+    \hline
+    CAT B & Unauthorized Access or Compromised Asset & A person gains logical or physical access without permission to a client network, system,
+    application, data, or other resource\newline
+    -Attempted or successful destruction, corruption, or disclosure of sensitive information or intellectual property\newline
+    -Compromised host, network device, application, user account. This includes malware-infected hosts where an attacker is actively controlling the host (e.g. RAT) \newline
+    & 1-3 hours \\
+    \hline
+    CAT C &	Denial of Service &	-An attack that prevents or impairs the authorized use of networks, systems, or applications by exhausting resources.\newline
+    -Either as victim of or participating in the DoS/DDoS &	3 Hours \\
+    \hline
+    CAT D &	Malware or Malicious Code &	-A virus, worm, Trojan horse, or other code-based malicious entity that successfully infects a host.\newline
+    -This does not include compromised hosts that are being actively controlled by an attacker via a backdoor or Trojan. (See CAT B) &	12 Hours \\
+    \hline
+    CAT E &	Inappropriate Access, Unlawful Activity  &	-Theft/ Fraud/ Human Safety/ Child Porn. Computer-related incidents of a criminal nature,
+    potentially involving law enforcement. *NOTE &	24 Hours \\
+    \hline
+    CAT F &	AUP Violation &	-A person violates acceptable use of any network or computer use policies. & 24 Hours \\
+    \hline
+    CAT G &	Reconnaissance, Scanning, or Attempted Access &	-Any activity that seeks to access or identify a client computer, open ports, protocols, service,
+    or any combination for later exploit.\newline
+    -This activity does not directly result in a compromise or denial of service. &	72 Hours \\
+    \hline
+    CAT H &	Uncategorized/Under Investigation &	-Unconfirmed incidents that are potentially malicious or anomalous activity that warrants further review. & 72 Hours \\
+    \hline
+\end{tabular}
+\hspace*{-2cm}
+\subsection{Categories of Functional Impact}
+The following define functional impact to \CompanyName{}'s systems or environments \newline
+\hspace*{-2cm}
+\begin{tabular}{|p{3cm} p{16cm}|}
+    \hline
+    \textbf{Category} & \textbf{Definition} \\
+    \hline
+    None & No impact on the \CompanyName{} 's ability to go to market and win \\
+    \hline
+    Low & Minimal effect: \CompanyName{}  can still go to market but has reduced its competitive edge \\
+    \hline
+    Medium & \CompanyName{} 's ability to go to market and win is in question \\
+    \hline
+    High & \CompanyName{}  is no longer able to go to market and win \\
+    \hline
+\end{tabular}
+\hspace*{-2cm}
+\subsection{Categories of Information Impact}
+The following table establishes information impact to \CompanyName{}’s systems or environments\newline
+\hspace*{-2cm}
+\begin{tabular}{|p{3cm} p{16cm}|}
+    \hline
+    \textbf{Category} & \textbf{Definition} \\
+    \hline
+    None & No impact to CIA or the ability to go to market and win \\
+    \hline
+    Suspected but not identified & A data loss or impact to availability is suspected, but no direct confirmation exists \\
+    \hline
+    Privacy Breach & Sensitive personally identifiable information (PII) of employees, customers, clients, or other third party was either accessed or exfiltrated.
+    If you're unsure, ask your legal team! \\
+    \hline
+    Proprietary Breach & Proprietary information, such as intellectual property, was accessed or exfiltrated \\
+    \hline
+    Integrity loss & No longer able to trust either sensitive or proprietary information \\
+    \hline
+\end{tabular}
+\hspace*{-2cm}
+\subsection{Reporting}
+    \begin{enumerate}
+        \item Employees who wish to report an observed incident can submit one by calling \ReportingNumber{},
+        emailing \ReportingEmail{} or submitting a ticket at \TicketPortal{}
+        \item The IRT will track the incident and provide periodic reports to \CompanyName{} leadership.
+    \end{enumerate}
+\subsection{Evidence Retention and Chain of Custody}
+\begin{enumerate}
+    \item Evidence or information collected will be tracked by quantity and description. People who have custodial responsibility must execute proper due
+    diligence by securing evidence, limiting access, reporting the evidence under their control when and to whom applicable, and documenting that evidence.
+    If a physical device, description will include:
+    \begin{enumerate}
+        \item Manufacturer
+        \item Model
+        \item Serial Number
+        \item If evidence is digital or a file, include:
+        \item Filename
+        \item File hash
+        \item Modified, created, and accessed times
+        \item File Size
+        \item Physical media may also need to be protected with technology such as write blockers
+        \item If evidence is a record of testimony or similar information, include:
+        \item Name of interviewee
+        \item Name of interviewer
+        \item Location obtained
+        \item Medium used
+        \item Time collected
+        \item Signature of both interviewee and interviewer
+        \item Records of testimony should only be used when legally required or advised by legal counsel.
+        \item When evidence is transferred from one party to another, chain of custody will be maintained regardless of the reason for transfer.
+        A document must accompany the evidence that maintains the date and time of every transfer, who the evidence was transferred from,
+        and who the evidence was transferred to. For each transfer, transferring and receiving parties will both record:
+        \item Date and time
+        \item Name
+        \item Organization/department
+        \item Signature
+        \item Purpose of custody change
+    \end{enumerate}
+\end{enumerate}
+\subsection{Reporting template}
+\begin{enumerate}
+    \item \CompanyName{} will track all incidents using \TicketPortal{} and will establish a ticket format to capture all the information required by this policy.
+    \item Incident Response Tickets will have a category and template that indicates its high priority and is distinct from routine IT support or IT helpdesk tickets.
+    \item Should the ticketing system be unavailable for any reason, the following reporting template is provided as an alternative
+\end{enumerate}
+\newpage
+\newgeometry{left=0.5cm, top=1cm}
+\begin{tabular}{|p{9cm} | p{5cm} | p{5cm}|}
+    \hline
+    \multicolumn{3}{|l|}{Company Security Incident Report} \\
+    \hline
+    Incident Tracking Number & \multicolumn{2}{|p{10cm}|}{}\\
+    \hline
+    Incident Category & \multicolumn{2}{|p{10cm}|}{}\\
+    \hline
+    Functional Impact & \multicolumn{2}{|p{10cm}|}{}\\
+    \hline
+    Informational Impact & \multicolumn{2}{|p{10cm}|}{}\\
+    \hline
+    Dates and Times & Local & UTC \\
+    \hline
+    Detected & & \\
+    \hline
+    Started & & \\
+    \hline
+    Stopped & & \\
+    \hline
+    Num. of affected systems, records, users & \multicolumn{2}{|p{10cm}|}{} \\
+    \hline
+    \multicolumn{3}{|l|}{Summary/Narrative of Incident} \\
+    \hline
+    \multicolumn{3}{|l|}{\newline} \rule{0pt}{40pt}\\
+    \hline
+    \multicolumn{3}{|l|}{Network location or identification of systems, records, or users impacted } \\
+    \hline
+    \multicolumn{3}{|l|}{\newline} \rule{0pt}{40pt}\\
+    \hline
+    \multicolumn{3}{|l|}{Attack vector or root-cause analysis } \\
+    \hline
+    \multicolumn{3}{|l|}{\newline} \rule{0pt}{40pt}\\
+    \hline
+    \multicolumn{3}{|l|}{Associated indicators of compromise } \\
+    \hline
+    \multicolumn{3}{|l|}{\newline} \rule{0pt}{40pt}\\
+    \hline
+    \multicolumn{3}{|l|}{Actions taken} \\
+    \hline
+    \multicolumn{3}{|l|}{\newline} \rule{0pt}{40pt}\\
+    \hline
+    \multicolumn{3}{|l|}{Recommended mitigations and/or follow-up actions } \\
+    \hline
+    \multicolumn{3}{|l|}{\newline} \rule{0pt}{40pt}\\
+    \multicolumn{3}{|l|}{Points of contact for follow-up  } \\
+    \hline
+    \multicolumn{3}{|l|}{\newline} \rule{0pt}{40pt}\\
+    \hline
+\end{tabular}
+\restoregeometry
+\subsection{Process}
+\begin{enumerate}
+    \item When an event is discovered, the individual who discovers it will report it to the appropriate entity such as the Security team, IT Committee,
+    or CISO via phone, email, or trouble ticket.
+    \item The notification will immediately alert the information security team or security watch personnel, who will collect the following information
+    and contact the reporter as needed: When notified of a security incident, immediately log the following:
+    \begin{enumerate}
+        \item The caller/notifier's name
+        \item Time of notification
+        \item The notifier's contact information
+        \item The nature of the incident (collect who, what, when, where, why)
+        \item Equipment or persons involved
+        \item Location of equipment or persons involved
+        \item How the incident was detected
+        \item When an event was first noticed indicating that an incident occurred
+        \item Make an initial determination of the following or add details as appropriate:
+        \item Is the equipment, system, or information impacted business critical?
+        \item What is the severity of impact or potential category of incident?
+        \item Name of the system being targeted, along with the operating system, IP address, and location
+        \item Information about the origin of the attack, if possible including but not limited to IP address, domain name, specific ports or services, etc.
+        \item Refer to the IT emergency contact list (Located here) and or PACE Plan for the affected department.
+        \item Use the contact lists to determine both management personnel to be contacted and incident response personnel.
+        \item Contact the appropriate incident response personnel using both email and phone messages.
+        \item Note the time and manner of each contact
+    \end{enumerate}
+    \item The staff member receiving notification will then list all additional parties who may discover the incident and collect their contact information.
+    Parties to contact may include:
+    \begin{enumerate}
+        \item Helpdesk
+        \item The CISO
+        \item Intrusion Detection monitoring personnel
+        \item A system administrator
+        \item A firewall administrator
+        \item A business partner
+        \item A manager
+        \item The security department or a security person
+        \item An outside source
+    \end{enumerate}
+    \item List all parties to contact and determine the contact information for each. Each party should have at least one 24/7 point of contact identified.
+    People outside the IT department likely have different contact procedures than those inside IT.
+    \item If the event meets the standard of “Incident,” the authority triaging will use determine which specific members of the IRT need to convene
+    and will use the PACE plan to contact them. The IRT will meet physically or virtually via a secure, out of band system, and determine a strategy:
+    \begin{enumerate}
+        \item Is this incident real or a false positive?
+        \item Is the incident ongoing?
+        \item How does this impact our ability to go to market and win?
+        \item What is the business impact should the attack succeed? See Incident Categories
+        \item What assets are threatened and how critical is an immediate response?
+        \item and Categories of Information Impact tables to understand the impact. Contact relevant people that may provide more information to severity.
+        \item What systems or systems are targeted, where are they physically or on the network?
+        \item Is the incident inside a high-value or supposedly isolated network, infrastructure, SaaS, platform or otherwise elevated system of trust?
+        \item Is this a break-glass-in-case-of-fire incident (how urgent is this)?
+        \item Can we quickly contain the incident?
+        \item Will the response alert the attacker and do we care?
+        \item What type of incident is this?
+        \item Who else needs to know?
+    \end{enumerate}
+    \item The IRT will create an incident ticket and the incident will be categorized into the highest applicable level as established in the policy section
+    of this appendix.
+    \item The IRT will begin taking time-stamped notes on the ticket itself (technology permitting).
+    \item Select the appropriate plan or playbook based on the initial assessment of the incident. If an appropriate plan does not exist, create an initial plan.
+    \item New plans created must be documented so that they can be encapsulated after recovery is complete.
+    \item Notify any additional personnel as appropriate or indicated by the playbook.
+    \item All incident response team members begin work to contain the incident and gather additional information.
+    \item Talk to witnesses (if any) and begin scrubbing logs (and gaps), alerts, and system availability tools to determine root cause and impact.
+    Note: Only authorized personnel appropriate for the situation should perform interviews or examine the evidence. If in doubt consult the CISO and legal counsel.
+    \item Forensics evidence and data will be gathered and maintained in accordance with the policy section of this appendix.
+    \item The incident response team will work with other stakeholders (such as the NOC) and will recommend changes to contain and prevent the incident
+    from expanding and recurring.
+    \item All changes will be annotated in the incident response ticket
+    \item Management will approve changes, potentially expediting or modifying normal change control processes to appropriately mitigate risks.
+    Any change or departure from normal procedure will be documented in the ticket.
+    \item If the incident is a system compromise, team members will remediate the incident and restore the affected system(s) to an uncompromised state.
+    They may do one or many of the following:
+    \begin{enumerate}
+        \item Re-install and restore data from backups if necessary. Note: Verify if you are required to preserve evidence before executing!
+        \item Rotate passwords if there is a reasonable possibility they have been disclosed.
+        \item Be sure the system has been hardened by turning off or uninstalling unused services.
+        \item Validate appropriate patching levels.
+        \item Validate that intrusion detection/EDR/other protections are running.
+        \item Validate appropriate logging and reporting.
+    \end{enumerate}
+    \item If the incident is a DDoS:
+    \begin{enumerate}
+        \item Determine if the Internet provider cut the circuit and why. If they turn the circuit back on and there's still an ongoing DDoS,
+        the circuit may flop again. This would require scrubbing prior to traffic landing on the circuit.
+        \item Determine if the DDoS is a noisy feint designed to take your attention away from a more nefarious goal.
+    \end{enumerate}
+    \item If the incident is ransomware, follow your ransomware playbook. This may require:
+    \begin{enumerate}
+        \item Contacting outside counsel
+        \item Implementing your external Communications Plan
+        \item Validating backup integrity
+        \item Identifying and remediating root cause
+    \end{enumerate}
+    \item All the following will be documented:
+    \begin{enumerate}
+        \item How the incident was discovered.
+        \item The category of the incident.
+        \item How the incident occurred, whether through email, firewall, etc.
+        \item Where the attack came from, such as IP addresses and other related information about the attacker.
+        \item What the response plan was.
+        \item What was done in response?
+        \item Whether the response was effective.
+    \end{enumerate}
+    \item After documentation is compiled, notify proper external agencies:
+    \begin{enumerate}
+        \item If prosecution of the intruder is possible, notify the police or other appropriate agency
+        \item Compile a list of all agencies to contact, contact information, and the date/time they were contacted
+    \end{enumerate}
+    \item Assess damage and cost to the organization and estimate both the damage cost and the cost of the containment efforts.
+    \item Review response and update policies. Plan and take preventative steps to prevent re-compromise or the intrusion from recurring.
+    \item Consider whether an additional policy could have prevented the intrusion.
+    \item Consider whether a procedure or policy was not followed which allowed the intrusion, and then consider what could be changed to ensure
+    that the procedure or policy is followed in the future.
+    \item Was the incident response appropriate? How could it be improved?
+    \item Was every appropriate party informed in a timely manner?
+    \item Were the incident-response procedures detailed and did they cover the entire situation? How can they be improved?
+    \item Have changes been made to prevent a re-infection? Have all systems been patched, systems locked down, passwords changed, anti-virus updated,
+    email policies set, etc.?
+    \item Have changes been made to prevent a new and similar infection?
+    \item Should any security policies be updated?
+    \item What lessons have been learned from this experience?
+
+\end{enumerate}
+
+\end{document}
