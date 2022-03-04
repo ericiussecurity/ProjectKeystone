@@ -12,7 +12,7 @@ This policy applies to entities as outlined in the Cybersecurity and IT Policy b
 \subsection{Roles}
 \begin{enumerate}
     \item Roles are inherited from the base Cybersecurity and IT Policy document. Additions are by exception.
-    \item Data Loss Prevention Officer - \CompanyName can either implement the DLPO role as an additional duty or align the role independently.
+    \item Data Loss Prevention Officer - \CompanyName{} can either implement the DLPO role as an additional duty or align the role independently.
     The DLPO leads the subset of risk mitigation efforts to support the CISO and reduce risk to the partner ecosystem. The DLPO is charged with
     identifying various data across the organization and classifying it (Identify), building safeguards into the higher levels of data classification (Protect),
     implementing alarms to understand when that data has left the organization's control (Detect), builds and leads the response to that data lose (Respond),
@@ -23,7 +23,7 @@ This policy applies to entities as outlined in the Cybersecurity and IT Policy b
 \end{enumerate}
 \subsection{Policy Overview}
 \begin{enumerate}
-    \item \CompanyName will continuously work to decrease our attack surface and improve our security posture by applying the NIST fundamentals of
+    \item \CompanyName{} will continuously work to decrease our attack surface and improve our security posture by applying the NIST fundamentals of
     Identify, Protect, Detect, Respond, and Recover to the attack surface that we cannot decrease.
     \item We will review both annually and as required by partners or other events such as but not limited to new legislation or otherwise our security compliance requirements.
     In the event that we have no formal requirement as outlined by local laws, we will apply minimum baselines as required by clients, customers, partners, suppliers, local laws and regulations,
@@ -54,25 +54,25 @@ This policy applies to entities as outlined in the Cybersecurity and IT Policy b
     \item Protect
     \begin{enumerate}
         \item Understanding that modern systems often have some form of “Shared Responsibility Model” means that we have less control over some systems such as SAAS than we might with other
-        systems such as internally developed and hosted applications run on \CompanyName-owned hardware. However, operating within that understanding is not an excuse to assume risk.
-        \item While we are strategically a SAAS-focused \CompanyName, we will not assume that full responsibility aligns with the provider and we will apply reasonably prudent controls to protect our
+        systems such as internally developed and hosted applications run on \CompanyName{}-owned hardware. However, operating within that understanding is not an excuse to assume risk.
+        \item While we are strategically a SAAS-focused \CompanyName{}, we will not assume that full responsibility aligns with the provider and we will apply reasonably prudent controls to protect our
         data and our people. We will apply such controls as multi-factor authentication, security review, vendor risk management programs, and best practices for password policies to limit risk
         exposure to data in transit, in process, and at rest.
-        \item User endpoints will be hardened with preconfigured “gold images,” will be enrolled in \CompanyName-controlled management programs (programs that balance security with personal privacy
+        \item User endpoints will be hardened with preconfigured “gold images,” will be enrolled in \CompanyName{}-controlled management programs (programs that balance security with personal privacy
         with preference focused on reasonable privacy), protected with multifactor authentication such as biometrics or other widely accepted factors, protected with increased defenses such as
         corporate-grade signature and behavioral analytics systems that block suspicious activity, allow-lists when possible, sandboxed email, and other zero-trust fundamentals such as restricted
         access.
     \end{enumerate}
     \item Detect
     \begin{enumerate}
-        \item Given that we are a SAAS-based, remote-focused \CompanyName, our detection measures focus on endpoint, network, identity, and SAAS applications.
-        \item Identity - \CompanyName will implement a zero-trust model of security that focuses on Identity. That means that many of our detection efforts are focused on identity.
+        \item Given that we are a SAAS-based, remote-focused \CompanyName{}, our detection measures focus on endpoint, network, identity, and SAAS applications.
+        \item Identity - \CompanyName{} will implement a zero-trust model of security that focuses on Identity. That means that many of our detection efforts are focused on identity.
         Therefore, a large portion of our efforts are focused at the identity layer and we will continue to extend our identity integration into SAAS partners such as SalesForce, M365,
         and other supporting applications as required. This provides us visibility into identity areas that we might not have otherwise understood. This way we can understand where our data is,
         what our risk exposure is, what adversaries might be attempting to or actually accessing data from compromised identities, and what actions we need to take at the identity layer to limit
         exposure. Identity logs are pushed to the data aggregation solution to allow for both post-mortems, correlation, and hunt activities.
         \item Host (endpoint) - Given that we are a remote workforce, user endpoints are one of our weakest avenues.  We can never truly understand whom has access to those devices that might
-        have \CompanyName data on them. That means that any user that attempts to access \CompanyName data must register the device with \CompanyName management before accessing that data. This allows us to
+        have \CompanyName{} data on them. That means that any user that attempts to access \CompanyName{} data must register the device with \CompanyName{} management before accessing that data. This allows us to
         detect device health prior and therefore limit access to data for unhealthy devices. This is part of our MDM/UEM strategy. For runtime environments and/or daily operations on those devices,
         we deploy detection systems appropriate to the hardware and operating system that the user needs. Those detection systems such as host-based intrusion detection systems (HIDS) are often
         integrated into the same agents running some of the outcomes listed in the Prevent section above. Alerts can be pushed from those endpoints to admins and response teams. Endpoint logs are
