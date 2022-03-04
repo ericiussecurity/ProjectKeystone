@@ -1,0 +1,129 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\section{Appendix C: Asset Management Policy}
+\subsection{Overview and Purpose}
+\begin{enumerate}
+    \item The purpose of this policy is to ensure that IT and information security support \CompanyName{} and allow it to win in the marketplace by establishing guidelines for managing assets both
+    informational, virtual, and physical.
+    \item This policy establishes the principles by which \CompanyName{} manages its assets including but not limited to computers, servers, software, information, and other critical assets.
+\end{enumerate}
+\subsection{Scope}
+This policy applies to entities as outlined in the Cybersecurity and IT Policy base document. Specifically, this document outlines applies to all information assets owned, leased,
+or otherwise used by \CompanyName{} or which store \CompanyName's information. Examples of IT assets include hardware such as user devices including endpoints and/or phones, office assets
+(cameras, printers, access points), software, various as-a-service assets such as Infrastructure (IaaS) and Software (SaaS) platforms like Google Workspaces, AWS, GitHub, QuickBooks, Salesforce, etc.
+\subsection{Enforcement}
+See enforcement clause in the Cybersecurity and IT Policy.
+\subsection{Roles and Responsibilities}
+\begin{enumerate}
+    \item The CISO or equivalent person designated in writing is responsible for proper implementation of the Asset Management Policy and accountable for driving the program.
+    \item The IT Team is responsible for maintaining accurate inventories and tracking systems for all assets and for deploying, operating, and maintaining asset management tools.
+    \item Directors are responsible for knowing their own inventories and keeping the IT Team and CISO informed of adds and changes
+\end{enumerate}
+\subsection{Acronyms and Terms}
+Asset management - The process by which our organization will identify, inventory, maintain, and dispose of physical and virtual assets.
+\subsection{Policy}
+\begin{enumerate}
+    \item Inventory of Computational Assets.
+    \begin{enumerate}
+        \item The IT Team, with the advice and assistance of the information security team, will maintain an accurate inventory of all \CompanyName's assets at all times.
+        To the extent possible, \CompanyName{} will record the following information for all computation assets and may adapt this list for physical versus logical assets:
+        \begin{enumerate}
+            \item 1.	Device name
+            \item Device serial number (or equivalent unique identifier for virtual servers)
+            \item Device IP addresses
+            \item Device MAC addresses
+            \item Device FQDN
+            \item Firmware and/or Operating system Version and date
+            \item Date of purchase and/or deployment
+            \item Date when the asset will exceed end of life, warranty, or support
+            \item Date of when service contracts will expire
+            \item Date of when \CompanyName{} must give notice by to avoid auto renew if applicable
+            \item Date installed
+            \item Classification level
+            \item Department or unit
+            \item Physical location
+            \item Point of contact
+            \item Brief description of role
+            \item In addition to an inventory, \CompanyName{} will maintain a map, diagram, or other pictural representation of how assets are dispositioned or segregated physically and logically.
+        \end{enumerate}
+    \end{enumerate}
+    \item The Asset Inventory can be found here: \AssetInventory
+    \item The Network Map can be found here: \NetworkDiagram
+\end{enumerate}
+
+\subsection{Inventory of Software and Services}
+\begin{enumerate}
+    \item The IT Team, with the advice and assistance of the information security team, will maintain an accurate inventory of all of \CompanyName's software and services.
+    To the extent possible \CompanyName{} will record the following information for all software, services, or IT related subscriptions:
+    \begin{enumerate}
+        \item Vendor name
+        \item Internal point of contact
+        \item Vendor point of contact
+        \item Type of software, service, or subscription
+        \item Version number
+        \item Account Number (such as for the license or with the vendor)
+        \item Quantity
+        \item Cost
+        \item Billing Period
+        \item Expiration or renewal date
+        \item End of life or support
+        \item Date of when service contracts will expire
+        \item Date of when \CompanyName{} must give notice to avoid auto-renewal if applicable
+        \item Department or unit
+        \item Description
+    \end{enumerate}
+    \item The software and services inventory should include IaaS and SaaS services, software deployed on servers or user workstations, both open-source and proprietary, services hosted
+    by third parties, domain names, and other related registrations or subscriptions.
+    \item For development processes, the development department leader is responsible for tracking all software dependencies and packages in use throughout the development and production
+    pipeline and environments and reporting those inventories to IT for tracking. This supports the concept of a software bill of materials (SBOM), allowing the team to understand inventory risk.
+    \item The Software and Services inventory can be found here: \AssetInventory
+\end{enumerate}
+
+\subsection{Inventory of Critical Accounts}
+\begin{enumerate}
+    \item Critical or privileged accounts, either for users, administrators, or automation, will be tracked and managed with the same scrutiny as other assets and will be considered
+    critical to \CompanyName{} accomplishing its mission and winning in the market.
+    \item Critical accounts include but are not limited to any key provided to a third party to access \CompanyName's systems, root or system level credentials of any kind,
+    AWS root credentials, and the personal credentials of any \CompanyName{} level executive.
+    \item An inventory of Critical Accounts will record:
+    \begin{enumerate}
+        \item Name
+        \item Account name
+        \item Date provisioned
+        \item All people with access to that account or credential
+        \item Privilege level
+        \item Date of last review or audit
+    \end{enumerate}
+    \item The Critical Account inventory can be found here: \AssetInventory
+\end{enumerate}
+
+\subsection{Asset Provisioning (and Gold Image)}
+\begin{enumerate}
+    \item The IT team will establish “gold images” for all configurable assets \CompanyName{} relies on.
+    \item \CompanyName{} will establish a gold image for at least each of its servers, baseline container images, and user workstations and will review each gold image when it is changed
+    or updated to ensure that any vulnerabilities or security issues are properly documented and mitigated. Each image will be reviewed at least annually.
+    \item When a new asset is acquired or deployed, it will be configured using \CompanyName's gold images and confirmed before it is deployed to development, staging, or production environments.
+    IT will manage code, scripts, or other automated means to deploy gold images, set initial configurations, and provide updates to the extent possible.
+    \item \CompanyName's gold images are stored and documented here: LINK\_TO\_GOLD\_IMAGE\_LIST
+\end{enumerate}
+\subsection{Configuration Management}
+\begin{enumerate}
+    \item Configuration management drives patch management
+    \item \CompanyName{} has a vested interest in investing in the care and feeding (lifecycle management) of its assets. Using Gold Images is the correct place to start.
+    Keeping those Gold Images and all their deployed subordinates up to date is nontrivial.
+    \item Patching is hard.
+    \item An IT Team with a solid configuration management program manages the Gold Images and deploys configuration updates through that management. This means that patches happen as an outcome
+    of a define-one-deploy-many configuration management program rather than a box-to-box patching program.
+\end{enumerate}
+\subsection{Tools for Asset Control}
+\begin{enumerate}
+    \item The IT team, with the advice and assistance of the information security team and relevant third parties, will establish tools for monitoring the state and health of assets.
+    Such tools will be deployed to all \CompanyName{} assets which can receive them and will be used to track:
+    \item What asset is active and where (at least to a logical, network level)
+    \item What the asset's running state is
+    \item What accounts, services, or personas are leveraging the asset
+    \item What software, services, or libraries are present or active on the asset
+    \item Where possible, asset control tools will also provide end point protection and enable the collection of logs and other artifacts relevant to asset management and incident response.
+    \item Further documentation regarding \CompanyName's asset management tools can be found here: LINK\_TO\_EDR\_OR\_RMM\_TOOLS\_DOCS
+\end{enumerate}
+\end{document}
